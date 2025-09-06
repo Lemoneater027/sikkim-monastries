@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacred Monasteries of Sikkim - A Spiritual Journey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__brand">
+                    <h2>🕉️ Sacred Sikkim</h2>
+                </div>
+                <div class="nav__menu">
+                    <a href="#home" class="nav__link">Home</a>
+                    <a href="#about" class="nav__link">About</a>
+                    <a href="#monasteries" class="nav__link">Monasteries</a>
+                    <a href="#tips" class="nav__link">Travel Tips</a>
+                    <a href="#contact" class="nav__link">Contact</a>
+                </div>
+                <button class="nav__toggle" id="navToggle">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section - Centered -->
+    <section id="home" class="hero">
+        <div class="hero__content">
+            <div class="container">
+                <div class="hero__text-center">
+                    <h1 class="hero__title">Sacred Monasteries of Sikkim</h1>
+                    <p class="hero__subtitle">A Spiritual Journey Through the Himalayas</p>
+                    <p class="hero__description">Discover the 10 most important Buddhist monasteries of Sikkim, each offering unique architecture, spiritual significance, and breathtaking mountain views.</p>
+                    <button class="btn btn--primary hero__cta" onclick="scrollToSection('monasteries')">Explore Monasteries</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section__title">About Sikkim Buddhism</h2>
+            <div class="about__content">
+                <div class="about__text">
+                    <p>Sikkim, nestled in the Eastern Himalayas, is a sacred land where Buddhism has flourished for centuries. The state is home to numerous ancient monasteries that serve as centers of spiritual learning, cultural preservation, and architectural marvel.</p>
+                    <p>These monasteries, belonging primarily to the Nyingma and Kagyu sects of Tibetan Buddhism, offer visitors a glimpse into the rich spiritual heritage of the region. Each monastery tells a unique story of devotion, artistic excellence, and historical significance.</p>
+                </div>
+                <div class="about__stats">
+                    <div class="stat">
+                        <h3>200+</h3>
+                        <p>Monasteries in Sikkim</p>
+                    </div>
+                    <div class="stat">
+                        <h3>4</h3>
+                        <p>Buddhist Sects</p>
+                    </div>
+                    <div class="stat">
+                        <h3>300+</h3>
+                        <p>Years of History</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter__controls">
+                <input type="text" id="searchInput" class="search__input" placeholder="Search monasteries...">
+                <select id="districtFilter" class="filter__select">
+                    <option value="">All Districts</option>
+                    <option value="East Sikkim">East Sikkim</option>
+                    <option value="West Sikkim">West Sikkim</option>
+                    <option value="North Sikkim">North Sikkim</option>
+                </select>
+                <select id="sectFilter" class="filter__select">
+                    <option value="">All Sects</option>
+                    <option value="Nyingma">Nyingma</option>
+                    <option value="Kagyu">Kagyu</option>
+                    <option value="Karma Kagyu">Karma Kagyu</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monasteries Section -->
+    <section id="monasteries" class="monasteries">
+        <div class="container">
+            <h2 class="section__title">The 10 Sacred Monasteries</h2>
+            <div class="monasteries__grid" id="monasteriesGrid">
+                <!-- Monastery cards will be dynamically populated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Tips Section -->
+    <section id="tips" class="tips">
+        <div class="container">
+            <h2 class="section__title">Travel Tips</h2>
+            <div class="tips__grid">
+                <div class="tip__card">
+                    <div class="tip__icon">📸</div>
+                    <h3>Photography</h3>
+                    <p>Respect photography restrictions and always ask permission before taking photos inside monastery premises.</p>
+                </div>
+                <div class="tip__card">
+                    <div class="tip__icon">👕</div>
+                    <h3>Dress Code</h3>
+                    <p>Dress modestly with covered shoulders and legs. Remove shoes when entering prayer halls.</p>
+                </div>
+                <div class="tip__card">
+                    <div class="tip__icon">🤫</div>
+                    <h3>Behavior</h3>
+                    <p>Maintain silence and peaceful behavior. Show respect to monks and ongoing prayers.</p>
+                </div>
+                <div class="tip__card">
+                    <div class="tip__icon">💰</div>
+                    <h3>Donations</h3>
+                    <p>Small donations are appreciated as a mark of respect and help maintain the monasteries.</p>
+                </div>
+                <div class="tip__card">
+                    <div class="tip__icon">🗓️</div>
+                    <h3>Best Time</h3>
+                    <p>Visit between March-June and October-December for the best weather and clear mountain views.</p>
+                </div>
+                <div class="tip__card">
+                    <div class="tip__icon">📋</div>
+                    <h3>Permits</h3>
+                    <p>North Sikkim monasteries require special permits. Plan ahead and carry necessary documents.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section__title">Plan Your Journey</h2>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <h3>Get Travel Assistance</h3>
+                    <p>Need help planning your monastery tour? Our local guides can help you create the perfect spiritual journey through Sikkim.</p>
+                    <div class="contact__details">
+                        <p>📧 info@sikkimmonasteries.com</p>
+                        <p>📱 +91-9876543210</p>
+                        <p>📍 Gangtok, Sikkim, India</p>
+                    </div>
+                </div>
+                <div class="contact__form">
+                    <form class="form">
+                        <input type="text" placeholder="Your Name" class="form__input" required>
+                        <input type="email" placeholder="Your Email" class="form__input" required>
+                        <select class="form__select" required>
+                            <option value="">Select Tour Duration</option>
+                            <option value="1-day">1 Day Tour</option>
+                            <option value="3-day">3 Day Tour</option>
+                            <option value="7-day">7 Day Complete Tour</option>
+                            <option value="custom">Custom Tour</option>
+                        </select>
+                        <textarea placeholder="Your Message" class="form__textarea" rows="4"></textarea>
+                        <button type="submit" class="btn btn--primary">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Sacred Sikkim</h3>
+                    <p>Your guide to the spiritual heritage of Sikkim's monasteries.</p>
+                </div>
+                <div class="footer__section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#monasteries">Monasteries</a></li>
+                        <li><a href="#tips">Travel Tips</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@sikkimmonasteries.com</p>
+                    <p>Phone: +91-9876543210</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Sacred Sikkim Monasteries. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for monastery details -->
+    <div id="monasteryModal" class="modal">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <div id="modalBody" class="modal__body">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
